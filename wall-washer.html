@@ -1,0 +1,102 @@
+
+	   <div class="products margit-top110">
+	         <div class="top-center">
+			      <h2>Our Products</h2>
+				  <p class="lead">
+				      We provide the most efficient service
+				  </p>
+			 </div>
+			 <div class="container">
+			      <ul class="link-filter text-center">
+				      <li><a class="btn btn-default" href="channel-letter.html">Channel Letter</a></li>
+					  <li><a class="btn btn-default" href="sign-box.html">Sign Box</a></li>
+					  <li><a class="btn btn-default active" href="wall-washer.html">Wall Washer</a></li>
+				  </ul>
+			      <ul class="portfolio-filter text-center">
+				      <li><a class="btn btn-default active" href="#" data-filter="*">All</a></li>
+					  <li><a class="btn btn-default" href="#" data-filter=".i_series">Ⅰ Series</a></li>
+					  <li><a class="btn btn-default" href="#" data-filter=".ii_series">Ⅱ Series</a></li>
+					  <li><a class="btn btn-default" href="#" data-filter=".v_series">Ⅴ Series</a></li> 
+					  <li><a class="btn btn-default" href="#" data-filter=".vi_series">Ⅵ Series</a></li> 
+					  <li><a class="btn btn-default" href="#" data-filter=".vii_series">Ⅶ Series</a></li> 
+					  <li><a class="btn btn-default" href="#" data-filter=".viii_series">Ⅷ Series</a></li> 
+				  </ul>
+				 
+				  <!--/#product-filter-->
+				  <div class="row">
+						  <div class="portfolio-items">
+						        <div class="portfolio-item i_series col-xs-12 col-sm-4 col-md-4">
+						        		<a href="Wall-Washer-I-Series.html">
+								  <img class="img-responsive" src="images/products/wall_washer/lww-1c-36p.jpg" alt="">
+									</a>
+						        </div>
+								<!--/.portfolio-item-->
+								<div class="portfolio-item ii_series col-xs-12 col-sm-4 col-md-4">
+								  	<a href="Wall-Washer-II-Series.html">
+								  <img class="img-responsive" src="images/products/wall_washer/lww-2-36p-72p-144p.jpg" alt="">
+									</a>
+								</div>
+								
+								<!--/.portfolio-item-->
+								
+								<div class="portfolio-item v_series col-xs-12 col-sm-4 col-md-4">
+                                		<a href="Wall-Washer-V-Series.html">
+                                   		<img class="img-responsive" src="images/products/wall_washer/lww-5-18p-36p.jpg" alt="">
+									</a>
+								</div>
+								<!--/.portfolio-item-->
+								
+								<div class="portfolio-item vi_series col-xs-12 col-sm-4 col-md-4">
+								  <a href="Wall-Washer-Ⅵ-Series.html">
+								  <img class="img-responsive" src="images/products/wall_washer/lww-6-18p-36p.jpg" alt="">								
+									</a>
+								</div>
+								<!--/.portfolio-item-->
+								<div class="portfolio-item vii_series col-xs-12 col-sm-4 col-md-4">
+								  <a href="Wall-Washer-Ⅶ-Series.html">
+								  <img class="img-responsive" src="images/products/wall_washer/lww-7-36p-72p.jpg" alt="">
+									</a>
+								</div>
+								<!--/.portfolio-item-->
+								<div class="portfolio-item viii_series col-xs-12 col-sm-4 col-md-4">
+									<a href="Wall-Washer-Ⅷ-Series-LWW-8A-144P.html">
+								  		<img class="img-responsive" src="images/products/wall_washer/lww-8a-144p.jpg" alt="">
+									</a>
+								</div>
+								<!--/.portfolio-item-->
+								
+								<div class="portfolio-item viii_series col-xs-12 col-sm-4 col-md-4">
+                                   <a href="Wall-Washer-Ⅷ-Series-LWW-8B-108P.html">
+                                   <img class="img-responsive" src="images/products/wall_washer/lww-8b-108p.jpg" alt="">
+									</a>
+								</div>
+								<!--/.portfolio-item-->
+								
+								<div class="portfolio-item viii_series col-xs-12 col-sm-4 col-md-4">
+								  <a href="Wall-Washer-Ⅷ-Series-LWW-8C-108P216P.html">
+								  <img class="img-responsive" src="images/products/wall_washer/lww-8c-108p-216p.jpg" alt="">								
+								</a>
+								</div>
+								<!--/.portfolio-item-->
+								
+								
+								
+						  </div>
+				  </div>
+			 </div>
+	   </div>
+	 
+<script src="js/jquery.isotope.min.js"></script>  
+<script>
+	$(window).load(function(){
+		var par = window.location.hash;
+		if(par)
+		{
+			par = '.'+par.slice(1);
+			$(".portfolio-filter li a").removeClass('active');
+			var psition = $(".portfolio-filter li a[data-filter='"+par+"']").addClass('active');
+			var $portfolio = $(".portfolio-items");
+			$portfolio.isotope({ filter: par });
+		}	
+	});
+</script>

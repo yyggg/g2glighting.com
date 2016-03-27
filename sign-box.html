@@ -1,0 +1,88 @@
+
+	   <div class="products margit-top110">
+	         <div class="top-center">
+			      <h2>Our Products</h2>
+				  <p class="lead">
+				      We provide the most efficient service
+				  </p>
+			 </div>
+			 <div class="container">
+			      <ul class="link-filter text-center">
+				      <li><a class="btn btn-default" href="channel-letter.html">Channel Letter</a></li>
+					  <li><a class="btn btn-default active" href="sign-box.html">Sign Box</a></li>
+					  <li><a class="btn btn-default" href="wall-washer.html">Wall Washer</a></li>
+				  </ul>
+			      <ul class="portfolio-filter text-center">
+				      <li><a class="btn btn-default active" href="#" data-filter="*">All</a></li>
+					  <li><a class="btn btn-default" href="#" data-filter=".array">ArRay Lighting System</a></li>
+					  <li><a class="btn btn-default" href="#" data-filter=".sparx">SparX Lighting System</a></li>
+					  <li><a class="btn btn-default" href="#" data-filter=".trident">Trident Lighting System</a></li> 
+					  <li><a class="btn btn-default" href="#" data-filter=".side">SiDe Lighting System</a></li> 
+					  <li><a class="btn btn-default" href="#" data-filter=".trident-stick">Trident Stick System</a></li> 
+				  </ul>
+				 
+				  <!--/#product-filter-->
+				  <div class="row">
+						  <div class="portfolio-items">
+						        <div class="portfolio-item side col-xs-12 col-sm-4 col-md-4">
+								  <a href="Side-Lighting-System.html">
+								  <img class="img-responsive" src="images/products/sign_box/SiDe.jpg" alt="">
+								  </a>
+								</div>
+						        <div class="portfolio-item array col-xs-12 col-sm-4 col-md-4">
+								  <a href="ArRay-Lighting-System.html">
+								  <img class="img-responsive" src="images/products/sign_box/Array.jpg" alt="">
+								  </a>
+								</div>
+								<!--/.portfolio-item-->
+								<div class="portfolio-item sparx col-xs-12 col-sm-4 col-md-4">
+								  <a href="SparX-Lighting-System.html">
+								  <img class="img-responsive" src="images/products/sign_box/Spart_X.jpg" alt="">
+								  </a>
+								</div>
+								<!--/.portfolio-item-->
+								
+								<div class="portfolio-item trident col-xs-12 col-sm-4 col-md-4">
+								   <a href="Trident-Lighting-System.html">
+                                   <img class="img-responsive" src="images/products/sign_box/Trident_DF.jpg" alt="">
+								   </a>
+								</div>
+								<!--/.portfolio-item-->
+								
+								<div class="portfolio-item trident-stick col-xs-12 col-sm-4 col-md-4">
+								  <a href="Trident-Stick-Lighting-System.html">
+								  <img class="img-responsive" src="images/products/sign_box/Trident-stick.jpg" alt="">
+								  </a>
+								</div>
+								<!--/.portfolio-item-->
+								
+								<div class="portfolio-item trident col-xs-12 col-sm-4 col-md-4">
+								  <a href="Trident-Lighting-System.html">
+								  <img class="img-responsive" src="images/products/sign_box/Trident_SF.jpg" alt="">
+								  </a>
+								</div>
+								<!--/.portfolio-item-->
+								
+								
+								
+								
+								
+						  </div>
+				  </div>
+			 </div>
+	   </div>
+	   
+<script src="js/jquery.isotope.min.js"></script> 
+<script>
+	$(window).load(function(){
+		var par = window.location.hash;
+		if(par)
+		{
+			par = '.'+par.slice(1);
+			$(".portfolio-filter li a").removeClass('active');
+			var psition = $(".portfolio-filter li a[data-filter='"+par+"']").addClass('active');
+			var $portfolio = $(".portfolio-items");
+			$portfolio.isotope({ filter: par });
+		}	
+	});
+</script>

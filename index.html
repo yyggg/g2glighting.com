@@ -1,0 +1,202 @@
+<!DOCTYOE html>
+<html lang="en" ng-app="g2gApp">
+<head>
+<meta charset="utf-8" />
+<title>G2G Lighting</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="Keywords" content="Channel Letter,Sign Box" />
+<meta name="Description" content="G2G LED Modules produces a variety of high-quality, innovatively crafted light fixtures, designed to transform the degree of adornment into one that is more personalized and effective. "/>
+<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/angular-animate.min.js"></script>
+<script type="text/javascript" src="js/angular-route.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body ng-controller="mainController">
+	<header id="header">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html" style="">
+						<img class="img-responsive media-edit" alt="Cinque Terre" src="images/logo.png">
+					</a>
+				</div>
+	
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="navbar-nav">
+						<li>
+							<a ng-href="/">Home</a>
+						</li>
+						<li>
+							<a ng-href="#about">About Us</a>
+						</li>
+						<li class="productList">
+							<a ng-href="#products/letter">Products</a>
+							<div class="dropdown-menu">
+								<div class="container">
+									<div class="channelLetter">
+										<a ng-href="#products/letter/aurora">Channel Letter</a>
+										<ul>
+											<li>
+												<a ng-href="#products/letter/aurora">Aurora Series</a>
+											</li>
+											<li>
+												<a ng-href="#products/letter/nox">G2G NOX Series</a>
+											</li>
+											<li>
+												<a ng-href="#products/letter/anpro">G2G AnPro Series</a>
+											</li>
+											<li>
+												<a ng-href="#products/letter/wow">G2G WOW Series</a>
+											</li>
+											<li>
+												<a ng-href="#products/letter/trico">TriCo Series</a>
+											</li>
+										</ul>
+									</div>
+									<div class="SignBox">
+										<a ng-href="#products/sign/array">Sign Box</a>
+										<ul>
+											<li>
+												<a ng-href="#products/sign/array">ArRay Lighting System</a>
+											</li>
+											<li>
+												<a ng-href="#products/sign/sparx">SparX Lighting System</a>
+											</li>
+											<li>
+												<a ng-href="#products/sign/trident">G2G Trident System</a>
+											</li>
+											<li>
+												<a ng-href="#products/sign/side">SiDe Lighting System</a>
+											</li>
+											<li>
+												<a ng-href="#products/sign/sign/stick">Trident Stick Lighting System</a>
+											</li>
+										</ul>
+									</div>
+									<div class="LEDWallWasher">
+										<a ng-href="#products/wall/i_series">LED Wall Washer</a>
+										<ul>
+											<li>
+												<a ng-href="#products/wall/i_series">Ⅰ Series</a>
+											</li>
+											<li>
+												<a ng-href="#products/wall/ii_series">Ⅱ Series</a>
+											</li>
+											<li>
+												<a ng-href="#products/wall/v_series">Ⅴ Series</a>
+											</li>
+											<li>
+												<a ng-href="#products/wall/vi_series">Ⅵ Series</a>
+											</li>
+											<li>
+												<a ng-href="#products/wall/vii_series">Ⅶ Series</a>
+											</li>
+											<li>
+												<a ng-href="#products/wall/viii_series">Ⅷ Series</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li><a ng-href="#services">Services</a></li>
+						<li class="support">
+							<a ng-href="#support/download">Support</a>
+							<div class="dropdown-menu support-list">
+								<div class="container">
+									<ul class="nav navbar-nav">
+										<li>
+											<a ng-href="#support/download">Tools & Download</a>
+										</li>
+										<li>
+											<a ng-href="#support/news">NEWs & Events</a>
+										</li>
+										<li>
+											<a ng-href="#support/contact">Contact Us</a>
+										</li>
+										<li>
+											<a ng-href="#support/video">Installation Video</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+	
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+	<div id="main">
+		<div ng-view></div>
+	</div>
+	
+	<div class="footer_wrapper">
+	         <div class="container">
+			     <div class="footer">
+				      <div class="foot-content">
+					      <div class="col-xs-12 col-sm-3">
+						       <ul>
+							       <li> 
+								       <a href="About_Us.html">About Us</a>
+								   </li>
+								   <li> 
+								       <a href="Contact-Us.html">Contact Us</a>
+								   </li>
+							   </ul>
+						  </div>
+						  <div class="col-xs-12 col-sm-3">
+						       <ul>
+							       <li> 
+								       <a href="#">Products</a>
+								   </li>
+								   <li> 
+								       <a href="Services.html">Services</a>
+								   </li>
+							   </ul>
+						  </div>
+						  <div class="col-xs-12 col-sm-3">
+						       <ul>
+							       <li> 
+								       <a href="tool&download.html">Tools & Download</a>
+								   </li>
+								   <li> 
+								       <a href="News&Event.html">News & Event</a>
+								   </li>
+							   </ul>
+						 </div>
+						 <div class="col-xs-12 col-sm-3 foot-log-div">
+						       <ul class="foot-log">
+							       <li> 
+								       <img alt="" src="images/foot-log-US.png">
+								   </li>
+								   <li> 
+								       <img alt="" src="images/foot-log-MS.png">
+								   </li>
+							   </ul>
+						 </div>
+						 <div class="clear"></div>
+					  </div>
+					  <div class="clear"></div>
+					  <div class="col-sm-12 copyright text-center">
+					        <p>Copyrights © 2016 by G2G LIGHTING,INC All Rights Reserved.</p>
+							<span class="icon-log"></span>
+					  </div>
+				 </div>
+			 </div>
+	   </div>  
+</body>
+</html>

@@ -1,0 +1,58 @@
+<div class="products margit-top110">
+	<div class="top-center">
+		<h2>Our Products</h2>
+		<p class="lead">
+			We provide the most efficient service
+		</p>
+	</div>
+	<div class="container">
+		<ul class="link-filter text-center">
+			<li><a class="btn btn-default" ng-class="{active:pid == 'letter'}" ng-click="filterProducts('letter','')">Channel Letter</a></li>
+			<li><a class="btn btn-default" ng-class="{active:pid == 'sign'}" ng-click="filterProducts('sign','')">Sign Box</a></li>
+			<li><a class="btn btn-default" ng-class="{active:pid == 'wall'}" ng-click="filterProducts('wall','')">Wall Washer</a></li>
+		</ul>
+		
+		<ul ng-show="pid=='wall'" class="portfolio-filter text-center">
+			<li><a ng-click="filterProducts('wall','')" class="btn btn-default" ng-class="{active:cid == ''}" data-filter="*">All</a></li>
+			<li><a ng-click="filterProducts('wall','i_series')" class="btn btn-default" ng-class="{active:cid == 'i_series'}" data-filter=".i_series">Ⅰ Series</a></li>
+			<li><a ng-click="filterProducts('wall','ii_series')" class="btn btn-default" ng-class="{active:cid == 'ii_series'}" data-filter=".ii_series">Ⅱ Series</a></li>
+			<li><a ng-click="filterProducts('wall','v_series')" class="btn btn-default" ng-class="{active:cid == 'v_series'}" data-filter=".v_series">Ⅴ Series</a></li>
+			<li><a ng-click="filterProducts('wall','vi_series')" class="btn btn-default" ng-class="{active:cid == 'vi_series'}" data-filter=".vi_series">Ⅵ Series</a></li>
+			<li><a ng-click="filterProducts('wall','vii_series')" class="btn btn-default" ng-class="{active:cid == 'vii_series'}" data-filter=".vii_series">Ⅶ Series</a></li>
+			<li><a ng-click="filterProducts('wall','viii_series')" class="btn btn-default" ng-class="{active:cid == 'letter'}" data-filter=".viii_series">Ⅷ Series</a></li>
+		</ul>
+				  
+		<ul ng-show="pid=='letter'" class="portfolio-filter text-center">
+			<li><a ng-click="filterProducts('letter','')" class="btn btn-default" ng-class="{active:cid == ''}" data-filter="*">All</a></li>
+			<li><a ng-click="filterProducts('letter','aurora')" class="btn btn-default" ng-class="{active:cid == 'aurora'}" data-filter=".aurora">Aurora Series</a></li>
+			<li><a ng-click="filterProducts('letter','nox')" class="btn btn-default" ng-class="{active:cid == 'nox'}" data-filter=".nox">NOX Series</a></li>
+			<li><a ng-click="filterProducts('letter','anpro')" class="btn btn-default" ng-class="{active:cid == 'anpro'}" data-filter=".anpro">AnPro Series</a></li>
+			<li><a ng-click="filterProducts('letter','wow')" class="btn btn-default" ng-class="{active:cid == 'wow'}" data-filter=".wow">WOW Series</a></li>
+			<li><a ng-click="filterProducts('letter','trico')" class="btn btn-default" ng-class="{active:cid == 'trico'}" data-filter=".trico">TriCo Series</a></li>
+		</ul>
+		
+		<ul ng-show="pid=='sign'" class="portfolio-filter text-center">
+	      	<li><a ng-click="filterProducts('sign','')" class="btn btn-default" ng-class="{active:cid == ''}" data-filter="*">All</a></li>
+		  	<li><a ng-click="filterProducts('sign','array')" class="btn btn-default" ng-class="{active:cid == 'array'}" data-filter=".array">ArRay Lighting System</a></li>
+		  	<li><a ng-click="filterProducts('sign','sparx')" class="btn btn-default" ng-class="{active:cid == 'sparx'}" data-filter=".sparx">SparX Lighting System</a></li>
+		  	<li><a ng-click="filterProducts('sign','trident')" class="btn btn-default" ng-class="{active:cid == 'trident'}" data-filter=".trident">Trident Lighting System</a></li> 
+		  	<li><a ng-click="filterProducts('sign','side')" class="btn btn-default" ng-class="{active:cid == 'side'}" data-filter=".side">SiDe Lighting System</a></li> 
+		  	<li><a ng-click="filterProducts('sign','stick')" class="btn btn-default" ng-class="{active:cid == 'stick'}" data-filter=".trident-stick">Trident Stick System</a></li> 
+	  	</ul>
+
+		<!--/#product-filter-->
+		<div class="row">
+			<div class="portfolio-items">
+				
+				<div class="portfolio-item {{v.cid}} col-xs-12 col-sm-4 col-md-4" ng-repeat="v in filtered">
+					<a ng-href="#product/{{v.href}}">
+						<img class="img-responsive" src="images/products/{{v.img}}" alt="">
+					</a>
+				</div>
+				
+			</div>
+		</div>
+		
+	</div>
+</div>
+
